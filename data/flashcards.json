@@ -1,0 +1,50 @@
+[
+  {
+    "front": "蘋果",
+    "back": "apple"
+  },
+  {
+    "front": "香蕉",
+    "back": "banana"
+  },
+  {
+    "front": "橘子",
+    "back": "orange"
+  },
+  {
+    "front": "葡萄",
+    "back": "grape"
+  },
+  {
+    "front": "西瓜",
+    "back": "watermelon"
+  },
+  {
+    "front": "芭樂",
+    "back": "papaya"
+  },
+  {
+    "front": "柳丁",
+    "back": "lychee"
+  },
+  {
+    "front": "草莓",
+    "back": "strawberry"
+  },
+  {
+    "front": "蓮霧",
+    "back": "dragon fruit"
+  },
+  {
+    "front": "檸檬",
+    "back": "lemon"
+  },
+  {
+    "front": "櫻桃",
+    "back": "cherry"
+  },
+  {
+    "front": "蓮子",
+    "back": "lotus seed"
+  }
+]
