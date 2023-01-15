@@ -8,7 +8,9 @@ class BasicView(ViewInterface):
     def __init__(self, controller: ControllerInterface,
                  title: str = "Vocabulary Trainer - a student project by Benjamin",
                  width: int = 600,
-                 height: int = 400):
+                 height: int = 400,
+                 font_ratio: float = 1) -> None:
+        self.__font_ratio = font_ratio
         self.__title = title
         self.__width = width
         self.__height = height
@@ -39,17 +41,18 @@ class BasicView(ViewInterface):
 
     def create_vocabulary_label(self) -> None:
         self.__vocabulary_label = tk.Label(self.__root, text=self.__controller.get_card())
-        self.__vocabulary_label.config(font=("Courier", int((self.__width + self.__height) ** 0.55)))
+        self.__vocabulary_label.config(font=("Courier", int((self.__width + self.__height) ** 0.57 * self.__font_ratio)))
         self.__vocabulary_label.pack(side=tk.TOP, fill=tk.BOTH, expand=True)
 
     def create_index_label(self) -> None:
         self.__index_label = tk.Label(self.__root,
                                       text=f"{self.__controller.get_index() + 1} / {self.__controller.get_size()}")
+        self.__index_label.config(font=("Courier", int((self.__width + self.__height) ** 0.4 * self.__font_ratio)))
         self.__index_label.pack(side=tk.TOP, fill=tk.BOTH, expand=False)
 
     def create_user_input(self) -> None:
         self.__answer_block = tk.Entry(self.__root)
-        self.__answer_block.config(font=("Courier", int((self.__width + self.__height) ** 0.5)),justify='center')
+        self.__answer_block.config(font=("Courier", int((self.__width + self.__height) ** 0.5 * self.__font_ratio)),justify='center')
         self.__answer_block.bind("<Return>", self.check_answer)  # bind the enter key to the check_answer method
         self.__answer_block.pack(side=tk.TOP, fill=tk.BOTH, expand=False)
 

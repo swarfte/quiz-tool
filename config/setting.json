@@ -1,3 +1,6 @@
 {
-  "path": "./data/flashcards.json"
+  "path": "./data/flashcards.json",
+  "width": 700,
+  "height": 400,
+  "font_ratio": 1
 }

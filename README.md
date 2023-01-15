@@ -7,7 +7,7 @@
     "back": "answer"
 }
 ```
-* flashcards.json is the example of the database file
+* `flashcards.json` is the example of the database file
 ***
 
 ## Instructions
