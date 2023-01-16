@@ -1,6 +1,10 @@
 {
-  "path": "./data/flashcards.json",
+  "path": "./data/wordbank_1.csv",
   "width": 700,
   "height": 400,
-  "font_ratio": 1
+  "font_ratio": 1,
+  "database": "CsvDatabase",
+  "model": "BasicModel",
+  "controller": "BasicController",
+  "view": "BasicView"
 }
